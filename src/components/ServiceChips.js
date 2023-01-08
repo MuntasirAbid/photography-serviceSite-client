@@ -7,7 +7,7 @@ const ServiceChips = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:10000/services3`;
+        const url = `https://photographer-server-mu.vercel.app/services3`;
 
         fetch(url)
             .then(res => {

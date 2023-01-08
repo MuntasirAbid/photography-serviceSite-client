@@ -13,7 +13,7 @@ const MyReviewsEdit = () => {
         const text = form.text.value;
 
 
-        fetch(`http://localhost:10000/review/${_id}`, {
+        fetch(`https://photographer-server-mu.vercel.app/review/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',

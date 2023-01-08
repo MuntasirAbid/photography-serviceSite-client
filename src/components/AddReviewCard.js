@@ -26,7 +26,7 @@ const AddReviewCard = ({ serviceDetails }) => {
 
 
 
-        fetch('http://localhost:10000/review', {
+        fetch('https://photographer-server-mu.vercel.app/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

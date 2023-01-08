@@ -10,7 +10,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:10000/services`;
+        const url = `https://photographer-server-mu.vercel.app/services`;
 
         fetch(url)
             .then(res => {

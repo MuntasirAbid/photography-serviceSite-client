@@ -15,7 +15,7 @@ const MyReviews = () => {
 
     useEffect(() => {
 
-        const url = `http://localhost:10000/reviewbyemail/${user.email}`;
+        const url = `https://photographer-server-mu.vercel.app/reviewbyemail/${user.email}`;
 
         fetch(url)
             .then(res => res.json())
@@ -30,7 +30,7 @@ const MyReviews = () => {
     const handleDelete = (id) => {
         const procced = window.confirm('Are you sure, you want to cancel this order');
         if (procced) {
-            fetch(`http://localhost:10000/review/${id}`, {
+            fetch(`https://photographer-server-mu.vercel.app/review/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

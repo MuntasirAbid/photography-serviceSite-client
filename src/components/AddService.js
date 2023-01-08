@@ -24,7 +24,7 @@ const AddService = () => {
         };
 
 
-        fetch('http://localhost:10000/services', {
+        fetch('https://photographer-server-mu.vercel.app/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
